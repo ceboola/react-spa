@@ -1,0 +1,4 @@
+/* istanbul ignore next */"use strict";Object.defineProperty(exports, "__esModule", { value: true });const addTodo = /* istanbul ignore next */exports.addTodo = (list, item) => {
+  list.push(item);
+  return list;
+};

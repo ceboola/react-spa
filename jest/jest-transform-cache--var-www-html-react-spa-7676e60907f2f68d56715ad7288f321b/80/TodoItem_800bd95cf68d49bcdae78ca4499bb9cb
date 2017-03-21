@@ -1,0 +1,16 @@
+/* istanbul ignore next */"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.TodoItem = undefined;var _jsxFileName = "/var/www/html/react-spa/src/components/todo/TodoItem.js";var /* istanbul ignore next */_react = require("react"); /* istanbul ignore next */var _react2 = _interopRequireDefault(_react);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+const TodoItem = /* istanbul ignore next */exports.TodoItem = props => {
+  const handleToggle = props.handleToggle.bind(null, props.id);
+  return (
+    /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */"li", /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 6 }, __self: undefined },
+      /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */"input", /* istanbul ignore next */{ type: "checkbox", onChange: handleToggle,
+        checked: props.isComplete, __source: { fileName: _jsxFileName, lineNumber: 7 }, __self: undefined }), /* istanbul ignore next */" ", props.name));
+
+
+};
+
+TodoItem.propTypes = {
+  name: /* istanbul ignore next */_react2.default.PropTypes.string.isRequired,
+  isComplete: /* istanbul ignore next */_react2.default.PropTypes.bool,
+  id: /* istanbul ignore next */_react2.default.PropTypes.number.isRequired };

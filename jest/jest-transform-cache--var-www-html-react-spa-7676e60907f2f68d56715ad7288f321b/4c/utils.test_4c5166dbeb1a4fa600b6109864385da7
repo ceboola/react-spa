@@ -1,0 +1,9 @@
+/* istanbul ignore next */'use strict';var /* istanbul ignore next */_utils = require('./utils');
+
+const add = (a, b) => a + b;
+
+test('partial applies the first ahead of time', () => {
+  const inc = /* istanbul ignore next */(0, _utils.partial)(add, 1, 4, 5);
+  const result = inc(2);
+  expect(result).toBe(3);
+});

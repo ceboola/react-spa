@@ -1,0 +1,14 @@
+/* istanbul ignore next */"use strict";Object.defineProperty(exports, "__esModule", { value: true });exports.TodoForm = undefined;var _jsxFileName = "/var/www/html/react-spa/src/components/todo/TodoForm.js";var /* istanbul ignore next */_react = require("react"); /* istanbul ignore next */var _react2 = _interopRequireDefault(_react);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+
+const TodoForm = /* istanbul ignore next */exports.TodoForm = props =>
+/* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */"form", /* istanbul ignore next */{ onSubmit: props.handleSubmit, __source: { fileName: _jsxFileName, lineNumber: 4 }, __self: undefined },
+  /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */"input", /* istanbul ignore next */{ type: "text",
+    onChange: props.handleInputChange,
+    value: props.currentTodo, __source: { fileName: _jsxFileName, lineNumber: 5 }, __self: undefined }));
+
+
+
+TodoForm.propTypes = {
+  currentTodo: /* istanbul ignore next */_react2.default.PropTypes.string.isRequired,
+  handleInputChange: /* istanbul ignore next */_react2.default.PropTypes.func.isRequired,
+  handleSubmit: /* istanbul ignore next */_react2.default.PropTypes.func.isRequired };
